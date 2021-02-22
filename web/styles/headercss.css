@@ -1,0 +1,89 @@
+
+div#header-div{
+    background-color: #008bc4e3;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+}
+/*nav styles*/
+nav ul{
+    display: flex;
+    margin: 7px;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.43em;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+.logo{
+    margin-right: 400px;
+}
+.enemigo{
+    color: white;
+}
+nav ul li.menu-bar{
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 919px){
+    nav ul li:not(.logo){
+        display: none;
+    }
+    nav ul li.menu-bar{
+        display: inline-flex;
+    }
+
+}
+
+@media screen and (max-width: 919px) {
+    .topnav.responsive nav ul{
+        display: block;
+    }
+
+    .topnav.responsive nav ul li{
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .topnav.responsive nav ul li.menu-bar{
+        position: relative;
+        bottom: 164px;
+        float: right;
+    }
+
+    .topnav.responsive nav ul li.logo{
+        position: relative;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .topnav.responsive nav ul li#about-link{
+        position: relative;
+        top: 0px;
+        margin-top: 40px;
+    }
+
+    .topnav.responsive nav ul li#admission -link{
+        position: relative;
+        top: 43px;
+    }
+    .topnav.responsive nav ul li#admin-login-link{
+        position: relative;
+        top: 43px;
+    }
+    .topnav.responsive nav ul li#student-login-link{
+        position: relative;
+        top: 43px;
+    }
+}
